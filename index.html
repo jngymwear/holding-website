@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JN Gymwear</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Goldman&family=Ubuntu&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		:root {
+			--background-color: #61B8DE;
+			--primary-color: #0F2732;
+		}
+
+		html {
+			height:100%;
+		}
+
+		body {
+			background-color: var(--background-color);
+			font-family: 'Ubuntu', sans-serif;
+			height: 90%;
+			padding: none;
+		}
+
+		h1 {
+			color: var(--primary-color);
+		}
+
+
+		.body	{
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			flex-direction: column;
+
+			overflow: hidden;
+		}
+
+		img	{
+			width:80%;
+
+			animation: image 2s forwards;
+		}
+
+		h1 {
+			opacity: 0;
+			position: absolute;
+			left: 1000px;
+			top: 80%;
+			animation: text 1s forwards;
+			animation-delay: 2s;
+
+		}
+
+		@keyframes image {
+			to {
+				width: 60%;
+				margin-top: -20%;
+			}
+		}
+
+		@keyframes text {
+			to {
+				opacity: 1;
+				left: 50%;
+
+				transform: translate(-50%, -50%);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="body">
+		<img src="logo.png">
+		<h1>LAUNCH SOON</h1>
+	</div>
+
+</body>
+</html>
